@@ -1,4 +1,4 @@
-@import "fonts"
+﻿@import "fonts"
 @import "libs"
 @import "vars"
 
@@ -53,8 +53,8 @@ body
 
 ul li
 	list-style-type: none
-	margin: 0px
-	padding: 0px
+	margin: 0
+	padding: 0
 
 .top-section .logo
 	width: 100px
@@ -62,10 +62,11 @@ ul li
 	padding-top: 5px
 
 .top-section .logo:hover
-	opacity: 0.95
+	opacity: 0.5
+	transition: 1s
 
 .top-section nav ul , .top-section .translate
-	padding: 20px 0px
+	padding: 20px 0
 
 .top-section nav ul li
 	display: inline
@@ -79,27 +80,93 @@ ul li
 	color: #00783d
 
 .top-section nav ul li a:hover
-	border-bottom: 1px solid #fded1f
+	border-bottom: 1px solid #00783d
 	padding-bottom: 10px
+	transition: 0.5s
 
 .top-section .translate li
 	display: inline
 	margin-right: 5px
 
 .top-section .phone
-	padding-top: 30px
+	padding-top: 35px
 	border-bottom: 1px dotted gray
 	width: 145px
 	opacity: 0.5
-	padding-left: 0px
-	padding-right: 0px
+	padding-left: 0
+	padding-right: 0
 
 .top-section .phone:hover
 	opacity: 1
 
 .bg-section1
-	background: url("/img/bg-header.jpg") no-repeat
-	height: 450px
+	background: url("../img/bg-header.jpg") no-repeat
+	height: 550px
 	background-size: 100%
+	position: relative
+	overflow: hidden
+
+.bg-section1 h1
+	margin-top: 86px
+	text-transform: uppercase
+	color: #fff176
+	text-align: center
+	font-weight: bold
+	font-size: 41px
+	letter-spacing: 3px
+	text-shadow: 2px 2px #333
+
+.bg-section1 h2
+	text-align: center
+	color: #fff
+	text-transform: uppercase
+	font-size: 23px
+	font-family: $default-font
+	font-weight: 500
+
+.bg-section1 .quote
+	color: #fff
+
+.quote
+	margin-top: 168px
+	text-align: right
+	font-size: 18px
+
+.maykl-porter
+	color: #fff
+	float: right
+	font-weight: 300
+	font-style: italic
+	text-align: right
+
+.maykl-porter
+	font-weight: 300
+	font-style: italic
+
+.maykl-porter span
+	font-weight: 100
+	font-style: italic
+
+.lightbox-section
+	box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.15)
+	position: relative
+	overflow: hidden
+
+.section2 h2
+  	margin-top: 59px
+  	text-align: center
+  	margin-bottom: 46px
+  	font-size: 62px
+  	font-weight: 100
+
+.section2 p span
+  	color: #07733d
+  	font-size: 75px
+  	line-height: 60px
+  	padding-top: 4px
+  	padding-right: 8px
+  	padding-left: 3px
+  	float: left
+
 
 @import "media" // Всегда в конце
